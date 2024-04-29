@@ -40,7 +40,7 @@ def markovChain(matrix, x0, num_steps):
 
 def fractions_to_decimals(chain):
     for step, x_new in enumerate(chain):
-        decimals = [float(x) for x in x_new]
+        decimals = [round(float(x), 5) for x in x_new]
         print("\nStep {}: {}".format(step, decimals))
 
 
