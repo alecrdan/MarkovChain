@@ -47,7 +47,7 @@ def fractions_to_decimals(chain):
 # Usage
 csv_file = 'matrix2.csv'
 matrix = csv_to_matrix(csv_file)
-x0 = [1] + [0] * (len(matrix) - 1)  # Vector
+x0 = [1/10] + [0] * (len(matrix) - 1)  # Vector
 num_steps = 20  # Number of steps
 chain = markovChain(matrix, x0, num_steps)
 fractions_to_decimals(chain)
